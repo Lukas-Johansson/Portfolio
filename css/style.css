@@ -1,0 +1,169 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #2d2e32;
+}
+
+.navbar {
+    display: flex;
+    margin: 0;
+    padding: 2.5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftnavcontent {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vh;
+    width: 20vw;
+}
+
+.rightnavcontent {
+    padding-left: 0.833vw;
+    color: white;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.rightnavcontent-home {
+    padding-left: 0.833vw;
+    color: #4dba87;
+    text-decoration: none;
+    font-size: 2vh;
+    transition: all 0.4s;
+}
+
+.rightnavcontent-home:hover {
+    color: #85ffc6;
+    transition: all 0.4s;
+
+}
+
+.top-container {
+    margin-top: 0.833vw;
+    margin-bottom: 2.5vw;
+    margin-inline: 4.167vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.top-tag {
+    border: none;
+    border-radius: 0.167vw;
+    padding: 0.208vw 1.667vw;
+    color: #2d2e32;
+    font-size: 0.667vw;
+    font-weight: 600;
+    background-color: #4dba87;
+    cursor: pointer;
+    text-align: center;
+    width: 5.833vw;
+}
+
+.top-text {
+    color: white;
+    font-size: 1.25vw;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-text {
+    color: #777;
+    font-size: 0.833vw;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.download-contact {
+    a {
+        color: #4dba87;
+        font-weight: 600;
+    }
+}
+
+.bottom-container {
+    background-color: #25262a;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.block {
+    background-color: #2d2e32;
+    border-radius: 5px;
+    margin: 1.667vw;
+    padding: 0.833vw;
+
+    h1 {
+        color: #4dba87;
+    }
+    p {
+        color: white;
+    }
+
+    a {
+        color: #777;
+        font-weight: 600;
+    }
+}
+
+.block-text {
+    font-size: 1vw;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        color: #4dba87;
+        font-size: 4em;
+        margin: 0;
+    }
+}
+
+.title {
+    color: #777;
+    font-size: 0.417vw;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.open-projects {
+    display: flex;
+    align-content: center;
+}
+
+.logo-roll {
+    display: flex;
+    justify-content: space-around;
+    background-color: #25262a;
+    padding: 0.833vw;
+    align-items: center;
+}
+
+.roll-image {
+  width: 10%;
+  height: 10%;
+}
+
+.footer-content {
+    padding: 1.667vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left {
+    color: white;
+    font-size: 0.833vw;
+    font-weight: 600;
+    padding: 0;
+}

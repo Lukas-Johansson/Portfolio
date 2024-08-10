@@ -1,0 +1,232 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #25262a;
+}
+
+.navbar {
+    display: flex;
+    margin: 0;
+    padding: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftnavcontent {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vh;
+    width: 20vw;
+}
+
+.rightnavcontent {
+    padding-left: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.rightnavcontent-home {
+    padding-left: 1rem;
+    color: #4dba87;
+    text-decoration: none;
+    font-size: vh;
+    transition: all 0.4s;
+}
+
+.rightnavcontent-home:hover {
+    color: #85ffc6;
+    transition: all 0.4s;
+
+}
+
+.top-container {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-inline: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.top-tag {
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.25rem 2rem;
+    color: #2d2e32;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #4dba87;
+    cursor: pointer;
+    text-align: center;
+    width: 7rem;
+}
+
+.top-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-text {
+    color: #777;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.download-contact {
+    a {
+        color: #4dba87;
+        font-weight: 600;
+    }
+}
+
+.bottom-container {
+    background-color: #25262a;
+    display: flex;
+    align-items: center;
+}
+
+.block {
+    background-color: #2d2e32;
+    border-radius: 5px;
+    margin: 2rem;
+    padding: 1rem;
+    width: 40vw;
+
+    h1 {
+        color: #4dba87;
+    }
+    p {
+        color: white;
+    }
+
+    a {
+        color: #777;
+        font-weight: 600;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        color: #4dba87;
+        font-size: 4em;
+        margin: 0;
+    }
+}
+
+.right-bottom {
+    margin: 2rem;
+}
+
+.title {
+    color: #777;
+    font-size: 0.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.toptextintro {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.qoute {
+    p{
+        font-size: 0.8rem;
+    }
+}
+
+.introtext {
+    p {
+        color: #777;
+    }
+}
+
+.logo-roll {
+    display: flex;
+    justify-content: space-around;
+    background-color: #25262a;
+    padding: 1rem;
+    align-items: center;
+}
+
+.roll-image {
+  width: 10%;
+  height: 10%;
+}
+
+.footer-content {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+}
+
+.project-section {
+    padding: 2rem;
+}
+
+.section-title {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: #2d2e32;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.project-card h3 {
+    color: #4dba87;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project-card p {
+    color: white;
+}
+
+.project-card a {
+    color: #4dba87;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.project-card a:hover {
+    color: #85ffc6;
+}
