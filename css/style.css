@@ -213,22 +213,27 @@ body {
     overflow: hidden; /* Hide the overflow */
     opacity: 0; /* Start with opacity 0 */
     border-radius: 5px;
-    margin: 1.667vw;
-    background: #2d2e32;
-    padding: 0.833vw;
     margin-top: 0;
-    transition: max-height 0.5s ease, opacity 0.5s ease; /* Add transition effects */
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease; /* Add transition effects */
+    pointer-events: none; /* Prevent interaction when hidden */
+    padding: 0; /* Remove padding when hidden */
 }
 
 .project-details.show {
     max-height: 1000px; /* Set a large enough height to accommodate content */
     opacity: 1; /* Make it fully visible */
+    pointer-events: auto; /* Allow interaction when visible */
+    padding: 1.5vw; /* Add padding when visible */
 }
 
 .project-card {
     display: flex;
     align-items: center;
+    border-radius: 5px;
     gap: 1.667vw;
+    padding: 1vw;
+    background: #2d2e32;
+    margin-bottom: 1.667vw; /* Add margin-bottom to space out project cards */
 }
 
 .project-image {
