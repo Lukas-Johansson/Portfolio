@@ -36,8 +36,12 @@
             </div>
             <div class="top-content">
                 <div class="top-text">
-                    <h2>Welcome to my <span style="color: #4dba87;">Awesome</span> portfolio.</h2>
-                    <h2>Check out my skills and experience!</h2>
+                    <div class="top-text-1">
+                        <h2>Welcome to my <span style="color: #4dba87;">portfolio!</span></h2>
+                    </div>
+                    <div class="top-text-2">
+                        <h2>Check out my skills and experience!</h2>
+                    </div>
                 </div>
                 <div class="bottom-text">
                     <p>I have a passion for creating beautiful and functional websites.</p>
@@ -46,31 +50,29 @@
                     <a href="index.php">Contact me!</a>
                     <a href="index.php" class="button">Download CV</a>
                 </div>
+            </div>
         </article>
         <article class="content-rightside">
             <div class="top-image">
-                <img src="images/developer.png" Developer" alt="headerpicture">
+                <img src="images/developer.png" alt="headerpicture">
             </div>
         </article>
     </div>
 
     <div class="bottom-container">
-        
+
         <div class="left-bottom">
             <div class="block">
                 <div class="title">
-                    <h1>
-                        Web Design
-                    </h1>
+                    <h1>Web Design</h1>
                     <img src="images/code.svg" alt="">
                 </div>
                 <div class="block-text">
                     <p>
-                        I develop Front-End with use of multiple frameworks as well as HTML, CSS, and JavaScript. I have
-                        experience in creating responsive websites that work on all devices.
+                        I develop Front-End with the use of multiple frameworks as well as HTML, CSS, and JavaScript. I
+                        have experience in creating responsive websites that work on all devices.
                     </p>
-                    <a href="">10 projects</a>
-
+                    <a href="">Projects</a>
                 </div>
             </div>
         </div>
@@ -78,9 +80,7 @@
         <div class="right-bottom">
             <div class="block">
                 <div class="title">
-                    <h1>
-                        Ui / UX Design
-                    </h1>
+                    <h1>Ui / UX Design</h1>
                     <img src="images/design.svg" alt="">
                 </div>
                 <div class="block-text">
@@ -89,8 +89,30 @@
                         wireframes and prototypes.
                     </p>
                     <div class="open-projects">
-                        <a href="">10 projects</a>
-                        <img src="images/openarrow.svg" alt="">
+                        <div class="opentext">
+                            <a href="javascript:void(0);" onclick="toggleProject()"> Projects</a>
+                        </div>
+                        <div class="openB">
+                            <button class="openbutton" onclick="toggleProject()">
+                                <img src="images/openarrow.svg" alt="Open Projects">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projectDetails" class="project-details">
+            <div class="project-card">
+                <a href="https://lukas-johansson.github.io/sidanfritid/"><img src="images/projects/WildRope.png" alt="Project Image" class="project-image"></a>
+                <div class="project-content">
+                    <h2>Static Leisure Shop</h2>
+                    <p>This is a solo project where I was tasked to do a website for a leisure shop. This also included fetching items from a mysql DB.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">JS</span>
+                        <span class="tag">MYSQL</span>
+                        <span class="tag">CSS</span>
                     </div>
                 </div>
             </div>
@@ -116,6 +138,10 @@
                 <img src="images/linkedin.svg" alt="">
             </div>
         </div>
+    </footer>
+
+    <!-- Include the external JavaScript file -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

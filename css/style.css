@@ -37,7 +37,6 @@ body {
 .rightnavcontent-home:hover {
     color: #85ffc6;
     transition: all 0.4s;
-
 }
 
 .top-container {
@@ -47,7 +46,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .top-tag {
@@ -61,6 +59,7 @@ body {
     cursor: pointer;
     text-align: center;
     width: 5.833vw;
+    cursor: default
 }
 
 .top-text {
@@ -69,6 +68,20 @@ body {
     font-weight: 600;
     margin: 0;
     padding: 0;
+}
+
+.top-text-1 {
+    h2 {
+        margin-bottom: 0.2vw;
+    }
+
+}
+
+.top-text-2 {
+  h2 {
+    margin-top: 0.2vw;
+    margin-bottom: 0.1vw;
+  }
 }
 
 .bottom-text {
@@ -100,18 +113,19 @@ body {
     border-radius: 5px;
     margin: 1.667vw;
     padding: 0.833vw;
+}
 
-    h1 {
-        color: #4dba87;
-    }
-    p {
-        color: white;
-    }
+.block h1 {
+    color: #4dba87;
+}
 
-    a {
-        color: #777;
-        font-weight: 600;
-    }
+.block p {
+    color: white;
+}
+
+.block a {
+    color: #777;
+    font-weight: 600;
 }
 
 .block-text {
@@ -121,24 +135,50 @@ body {
 .title {
     display: flex;
     justify-content: space-between;
-    h1 {
-        color: #4dba87;
-        font-size: 4em;
-        margin: 0;
-    }
 }
 
-.title {
-    color: #777;
-    font-size: 0.417vw;
-    font-weight: 600;
+.title h1 {
+    color: #4dba87;
+    font-size: 2em;
     margin: 0;
-    padding: 0;
 }
 
 .open-projects {
     display: flex;
-    align-content: center;
+    align-items: center;
+    gap: 0.2vw;
+}
+
+.opentext {
+    font-size: 1vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.openB {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.openbutton {
+    padding: 0;
+    border: none;
+    background: none;
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.openbutton img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.25vh;
 }
 
 .logo-roll {
@@ -150,8 +190,8 @@ body {
 }
 
 .roll-image {
-  width: 10%;
-  height: 10%;
+    width: 10%;
+    height: 10%;
 }
 
 .footer-content {
@@ -166,4 +206,56 @@ body {
     font-size: 0.833vw;
     font-weight: 600;
     padding: 0;
+}
+
+.project-details {
+    max-height: 0; /* Start with height 0 */
+    overflow: hidden; /* Hide the overflow */
+    opacity: 0; /* Start with opacity 0 */
+    border-radius: 5px;
+    margin: 1.667vw;
+    background: #2d2e32;
+    padding: 0.833vw;
+    margin-top: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Add transition effects */
+}
+
+.project-details.show {
+    max-height: 1000px; /* Set a large enough height to accommodate content */
+    opacity: 1; /* Make it fully visible */
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 1.667vw;
+}
+
+.project-image {
+    width: 15.625vw;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-content h2 {
+    color: #4dba87;
+    margin: 0 0 0.833vw;
+}
+
+.project-content p {
+    color: white;
+    margin: 0 0 1.667vw;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.833vw;
+}
+
+.tag {
+    background-color: #4dba87;
+    color: #2d2e32;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    font-weight: 600;
 }
