@@ -1,4 +1,3 @@
-// script.js
 function toggleProject() {
     const projectDetails = document.getElementById('projectDetails');
     const arrowIcon = document.getElementById('arrow-icon');
