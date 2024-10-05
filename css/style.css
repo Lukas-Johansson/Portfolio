@@ -96,6 +96,9 @@ body {
     a {
         color: #4dba87;
         font-weight: 600;
+        font-size: 0.85vw;
+
+
     }
 }
 
@@ -264,3 +267,4 @@ body {
     border-radius: 5px;
     font-weight: 600;
 }
+
