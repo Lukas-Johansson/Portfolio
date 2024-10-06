@@ -97,8 +97,6 @@ body {
         color: #4dba87;
         font-weight: 600;
         font-size: 0.85vw;
-
-
     }
 }
 
@@ -213,29 +211,20 @@ body {
 
 .project-details {
     max-height: 0;
-    /* Start with height 0 */
     overflow: hidden;
-    /* Hide the overflow */
     opacity: 0;
-    /* Start with opacity 0 */
     border-radius: 5px;
     margin-top: 0;
     transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
-    /* Add transition effects */
     pointer-events: none;
-    /* Prevent interaction when hidden */
     padding: 0;
-    /* Remove padding when hidden */
 }
 
 .project-details.show {
     max-height: fit-content;
     opacity: 1;
-    /* Make it fully visible */
     pointer-events: auto;
-    /* Allow interaction when visible */
     padding: 1.5vw;
-    /* Add padding when visible */
 }
 
 .project-card {
@@ -246,7 +235,6 @@ body {
     padding: 1vw;
     background: #2d2e32;
     margin-bottom: 1.667vw;
-    /* Add margin-bottom to space out project cards */
 }
 
 .project-image {
@@ -346,7 +334,6 @@ body {
         font-size: 4vw
     }
 
-    /* Ensure project cards stack on mobile */
     .title h1 {
         font-size: 6lvw;
 
@@ -375,7 +362,6 @@ body {
         font-size: 4vw;
     }
 
-    /* Footer adjustments for mobile */
     .footer-left,
     .footer-right {
         font-size: 4vw;
