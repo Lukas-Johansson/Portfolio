@@ -78,10 +78,10 @@ body {
 }
 
 .top-text-2 {
-  h2 {
-    margin-top: 0.2vw;
-    margin-bottom: 0.1vw;
-  }
+    h2 {
+        margin-top: 0.2vw;
+        margin-bottom: 0.1vw;
+    }
 }
 
 .bottom-text {
@@ -142,7 +142,7 @@ body {
 
 .title h1 {
     color: #4dba87;
-    font-size: 2em;
+    font-size: 1.667vw;
     margin: 0;
 }
 
@@ -212,21 +212,30 @@ body {
 }
 
 .project-details {
-    max-height: 0; /* Start with height 0 */
-    overflow: hidden; /* Hide the overflow */
-    opacity: 0; /* Start with opacity 0 */
+    max-height: 0;
+    /* Start with height 0 */
+    overflow: hidden;
+    /* Hide the overflow */
+    opacity: 0;
+    /* Start with opacity 0 */
     border-radius: 5px;
     margin-top: 0;
-    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease; /* Add transition effects */
-    pointer-events: none; /* Prevent interaction when hidden */
-    padding: 0; /* Remove padding when hidden */
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+    /* Add transition effects */
+    pointer-events: none;
+    /* Prevent interaction when hidden */
+    padding: 0;
+    /* Remove padding when hidden */
 }
 
 .project-details.show {
-    max-height: 1000px; /* Set a large enough height to accommodate content */
-    opacity: 1; /* Make it fully visible */
-    pointer-events: auto; /* Allow interaction when visible */
-    padding: 1.5vw; /* Add padding when visible */
+    max-height: fit-content;
+    opacity: 1;
+    /* Make it fully visible */
+    pointer-events: auto;
+    /* Allow interaction when visible */
+    padding: 1.5vw;
+    /* Add padding when visible */
 }
 
 .project-card {
@@ -236,7 +245,8 @@ body {
     gap: 1.667vw;
     padding: 1vw;
     background: #2d2e32;
-    margin-bottom: 1.667vw; /* Add margin-bottom to space out project cards */
+    margin-bottom: 1.667vw;
+    /* Add margin-bottom to space out project cards */
 }
 
 .project-image {
@@ -268,3 +278,127 @@ body {
     font-weight: 600;
 }
 
+@media only screen and (max-width: 768px) {
+
+    html,
+    body {
+        margin: 0;
+    }
+
+    .navbar {
+        display: flex;
+        margin: 0px;
+        padding: 7.5vw;
+        padding-bottom: 0vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .leftnavcontent {
+        width: 100%;
+    }
+
+    .rightnav {
+        display: none;
+    }
+
+    .top-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: unset;
+    }
+
+    .top-content {
+        padding: 20px;
+    }
+
+    .content-leftside {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .top-tag {
+        font-size: 3vw;
+        width: auto;
+        padding: 1vw 4vw;
+        margin: 20px;
+    }
+
+    .top-text {
+        font-size: 4vw;
+    }
+
+    .bottom-text {
+        font-size: 3vw;
+    }
+
+    .download-contact {
+        a {
+            font-size: 4vw;
+        }
+    }
+
+    .block {
+        padding: 2.833vw;
+    }
+
+    .block-text {
+        font-size: 4vw
+    }
+
+    /* Ensure project cards stack on mobile */
+    .title h1 {
+        font-size: 6lvw;
+
+    }
+
+    .project-card {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .project-content h2 {
+        font-size: 6vw;
+    }
+
+    .project-content p {
+        font-size: 4vw;
+    }
+
+    .project-tags .tag {
+        padding: 5px 10px;
+        font-size: 4vw;
+    }
+
+    /* Footer adjustments for mobile */
+    .footer-left,
+    .footer-right {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .top-image {
+        display: none;
+    }
+
+    .opentext {
+        display: none;
+    }
+
+    .openB {
+        display: none;
+    }
+
+    .logo-roll {
+        flex-wrap: wrap;
+    }
+
+    .roll-image {
+        width: 30%;
+    }
+}
