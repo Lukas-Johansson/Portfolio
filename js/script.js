@@ -6,16 +6,16 @@ function toggleProject() {
     if (window.innerWidth <= 768) {
         // On mobile, always show the project details and set the close arrow
         projectDetails.classList.add('show');
-        arrowIcon.src = '/images/closearrow.svg';
+        arrowIcon.src = 'images/closearrow.svg';
         return; // Do nothing further since toggle is disabled on mobile
     } else {
         // Toggle functionality for larger screens
         if (projectDetails.classList.contains('show')) {
             projectDetails.classList.remove('show');
-            arrowIcon.src = '/images/openarrow.svg';
+            arrowIcon.src = 'images/openarrow.svg';
         } else {
             projectDetails.classList.add('show');
-            arrowIcon.src = '/images/closearrow.svg';
+            arrowIcon.src = 'images/closearrow.svg';
         }
     }
 }
@@ -28,7 +28,7 @@ function autoOpenOnMobile() {
     if (window.innerWidth <= 768) {
         // Automatically open project details and set the close arrow
         projectDetails.classList.add('show');
-        arrowIcon.src = '/images/closearrow.svg';
+        arrowIcon.src = 'images/closearrow.svg';
     }
 }
 
