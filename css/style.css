@@ -225,6 +225,7 @@ body {
     opacity: 1;
     pointer-events: auto;
     padding: 1.5vw;
+    padding-top: 0vw;
 }
 
 .project-card {
